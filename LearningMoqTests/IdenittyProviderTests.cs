@@ -29,8 +29,8 @@ public class IdentityProviderTests
         var identidad = _idP.GetIdentity(userId, accessToken);
 
         // Assert
-        Assert.Equal(userId, identidad.Id);
         Assert.IsAssignableFrom<IUser>(identidad);
+        Assert.Equal(userId, identidad?.Id);
     }
 
     [Fact]
