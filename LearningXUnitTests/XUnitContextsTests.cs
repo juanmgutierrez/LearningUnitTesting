@@ -100,12 +100,12 @@ namespace UsersExampleTests
     // Collections
 
 
-    [CollectionDefinition(nameof(GuidGeneratorCollectionDefinitiion))]
-    public class GuidGeneratorCollectionDefinitiion : ICollectionFixture<GuidGenerator>
+    [CollectionDefinition(nameof(GuidGeneratorCollectionDefinition))]
+    public class GuidGeneratorCollectionDefinition : ICollectionFixture<GuidGenerator>
     {
     }
 
-    [Collection(nameof(GuidGeneratorCollectionDefinitiion))]
+    [Collection(nameof(GuidGeneratorCollectionDefinition))]
     public class XUnitContextsTests_Collection1
     {
         private readonly GuidGenerator _guidGenerator;
